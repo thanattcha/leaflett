@@ -75,11 +75,10 @@ attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> c
 
 }).addTo(map);
 
-var Topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
- maxZoom: 17,
- attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+var OpenStreetMap_HOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+ maxZoom: 19,
+ attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
 }).addTo(map);
-
 
 var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 	maxZoom: 17,
@@ -100,7 +99,7 @@ var baseLayers = {
 
 "OSM" : OSM,
 
-"Topo": Topo,
+"OpenStreetMap_HOT": OpenStreetMap_HOT,
 "OpenTopoMap": OpenTopoMap,
 "OPNVKarte": OPNVKarte,
 "OpenStreetMap_DE": OpenStreetMap_DE,
